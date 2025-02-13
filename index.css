@@ -4,6 +4,352 @@
     box-sizing: border-box;
 }
 
-h1{
-    color: greenyellow;
+.container{
+    gap: 300px;
 }
+
+.hyperlink{
+    font-size: 10px;
+    font-weight: 500;
+}
+
+/* .in-nav .collapse .ul{
+    float: right;
+}  */
+
+.bars{
+    outline: none; !important
+}
+
+.heroImg{
+    width: 50%;
+}
+.heroImg img{
+    width: 90%;
+}
+
+.study{
+    font-size: 64px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 60px;
+    width: 80%;
+    color: rgb(19, 19, 73);
+    padding-bottom: 10px;
+}
+
+.text{
+    padding-top: 73px;
+    /* margin-right: 57px; */
+}
+
+.start{
+    padding: 11px;
+    border-radius: 10px;
+    border: none;
+    
+    background-color: #00208A;
+    width: 131px;
+    text-align: center;
+    /* margin-top: 20px; */
+}
+
+.startlink{
+    color: white;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.learn{
+    font-size: 16px;
+    font-weight: 700;
+    color: #474747;
+    width: 95%;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+}
+
+#heroSection{
+    background-image: linear-gradient(31deg, #ffffff 0%, #fffdf2 99%);
+    width: 100%;
+}
+
+.inText{
+    padding-left: 130px;
+}
+
+
+@media (max-width: 900px) {
+    /* .heroImg img{
+        width: 500px;
+        
+    } */
+
+    .study{
+        width: 100%;
+    }
+
+    .inText{
+        padding-left: 100px;
+    }
+    
+}
+
+@media (max-width: 674px) {
+    /* .heroImg img{
+        width: 400px;
+        
+    } */
+
+    .inText{
+        padding-left: 70px;
+    }
+    
+}
+
+@media (max-width: 560px) {
+    /* .heroImg img{
+        width: 300px;
+        
+    } */
+    
+    .inText{
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 470px) {
+    /* .heroImg img{
+        width: 200px;
+        
+    } */
+
+    .inText{
+        padding-left: 4%;
+    }
+
+    .study{
+        font-size: 44px;
+        font-weight: 600;
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 60px;
+        width: 300px%;
+        color: rgb(19, 19, 73);
+        padding-bottom: 10px;
+    }
+
+    .learn{
+        font-size: 16px;
+        font-weight: 700;
+        color: #474747;
+        width: 100%;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin-top: 10px;
+    }
+    
+    
+}
+
+
+@media (max-width: 350pxpx) {
+    /* .heroImg img{
+        width: 170px;
+
+    } */
+
+    #heroSection{
+        padding: 0px;
+        width: 100%;
+    }
+
+}
+
+.world{
+    width: 90%;
+    font-size: 64px;
+    font-weight: 900;
+    color: rgb(19, 19, 73);
+    margin: auto;
+    padding-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.list{
+    border-bottom: 1.5px solid #9ad2f9;
+    padding-bottom: 2px;
+}
+
+.card{
+    border: none;
+}
+
+
+.more{
+    border-bottom: 1.5px solid black;
+}
+
+/* body{
+    background-color: rgba(249, 249, 218, 0.516);
+   }
+   .displaySection{
+        display:flex ;
+        width: 95%;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        gap: 50px;
+        justify-content: center;
+    }
+
+    .child{
+        border: transparent;
+        width: 400px;
+        
+    }
+    .child1{
+        border: transparent;
+        width: 32rem;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgb(214, 250, 251);
+        box-shadow: -2px 40px 50px 2px rgb(221, 252, 201);
+        
+    }
+
+    .child2{
+        border: transparent;
+        width: 32rem;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgb(254, 230, 188);
+        box-shadow: -2px 40px 50px 2px rgb(221, 252, 201);
+    }
+
+    .child3{
+        border:  transparent;
+        width: 32rem;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgb(241, 242, 159);
+        box-shadow: -2px 40px 50px 2px rgb(255, 207, 192);
+    }
+
+    .child4{
+        border: transparent;
+        width: 32rem;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 20px;
+        background-color: rgb(253, 239, 253);
+        box-shadow: -2px 40px 50px 2px rgb(255, 207, 192);
+    }
+
+    .img1{
+        border: transparent;
+        border-radius: 20px;
+        width: 80%;
+        height: 200px;
+        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/software-engineering-630x330-1.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .img2{
+        border: transparent;
+        border-radius: 20px;
+        width: 80%;
+        height: 200px;
+        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/03/product.jpg);
+        background-position: center;
+        background-size:  cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .img3{
+        border: transparent;
+        border-radius: 20px;
+        width: 80%;
+        height: 200px;
+        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/DATA-SQI.jpg);
+        background-position: center;
+        background-size:  cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 30px;
+    }
+
+    .img4{
+        border: transparent;
+        border-radius: 20px;
+        width: 80%;
+        height: 200px;
+        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/03/digital-literacy.jpg);
+        background-position: center;
+        background-size:  cover;
+        background-repeat: no-repeat;
+        margin: auto;
+        margin-top: 30px;
+    }
+    
+    .text1{
+        line-height: 25px;
+        border: transparent;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .text2{
+        line-height: 25px;
+        border: transparent;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .text3{
+        line-height: 25px;
+        border: transparent;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .text4{
+        line-height: 25px;
+        border: transparent;
+        width: 80%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+
+
+    .heading{
+        font-size: 45px;
+    } */
+
+    @media (max-width: 1024px) {
+        .card{
+            /* width: 100%; */
+        }
+    }
+
+    .duration{
+        /* width: 30rem; */
+    }
+
+    @media (max-width: 1024px) {
+       .duration{
+        padding: 0px 0px;
+       }
+    }
