@@ -4,22 +4,43 @@
     box-sizing: border-box;
 }
 
+.fa-bars{
+
+}
+
+header{
+    position: fixed;
+    z-index: 10;
+}
 .container{
     gap: 300px;
 }
 
-.hyperlink{
-    font-size: 10px;
-    font-weight: 500;
+.hyperlink ul{
+    width: 200px;
+    border-top: medium solid #00208A;
+    transform: translateY(12px);
+    border-radius: 0px;
+    
 }
 
-/* .in-nav .collapse .ul{
+.navbar-nav li a{
     float: right;
-}  */
 
-.bars{
-    outline: none; !important
 }
+
+
+
+.dropdown-item{
+    width: 95%;
+   
+}
+
+
+.navbar-toggler{
+    outline: none  !important;
+}
+
 
 .heroImg{
     width: 50%;
@@ -40,7 +61,7 @@
 
 .text{
     padding-top: 73px;
-    /* margin-right: 57px; */
+    width: 50%;
 }
 
 .start{
@@ -73,10 +94,11 @@
 #heroSection{
     background-image: linear-gradient(31deg, #ffffff 0%, #fffdf2 99%);
     width: 100%;
+    padding-top: 70px;
 }
 
 .inText{
-    padding-left: 130px;
+    padding-left: 100px;
 }
 
 
@@ -85,6 +107,14 @@
         width: 500px;
         
     } */
+    .in-nav {
+        display: flex;
+        width: inherit;
+        justify-content: space-between;
+    }
+    .container{
+         gap: 10px;
+    }
 
     .study{
         width: 100%;
@@ -102,6 +132,7 @@
         
     } */
 
+   
     .inText{
         padding-left: 70px;
     }
@@ -134,7 +165,7 @@
         font-weight: 600;
         font-family: Arial, Helvetica, sans-serif;
         line-height: 60px;
-        width: 300px%;
+        width: 300px;
         color: rgb(19, 19, 73);
         padding-bottom: 10px;
     }
@@ -165,6 +196,16 @@
 
 }
 
+/* .card{
+    width: 100%;
+    margin: auto;
+}
+
+.courses{
+    width: 100%;
+    margin: auto;
+} */
+
 .world{
     width: 90%;
     font-size: 64px;
@@ -191,165 +232,417 @@
     border-bottom: 1.5px solid black;
 }
 
-/* body{
-    background-color: rgba(249, 249, 218, 0.516);
-   }
-   .displaySection{
-        display:flex ;
+.displaySection{
+    margin: 40px 0px;
+    width: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 50px;
+    justify-content: center;
+}
+
+
+.child{
+    padding-left: 100px;
+}
+
+.parent-a{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+
+    margin-bottom: 40px;
+    gap: 0%;
+}
+
+.child a{
+    color:  rgb(26, 26, 99);
+    /* font-weight: 900px; */
+}
+
+.child1{
+    border: transparent;
+    width: 45%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 30px;
+    background-color: rgb(214, 250, 251);
+    box-shadow: -2px 40px 50px 2px rgb(221, 252, 201);
+    
+}
+.text1{
+    width: 80%;
+    margin: auto;
+
+}
+
+.img1{
+    border: transparent;
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/software-engineering-630x330-1.webp);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.child2{
+    border: transparent;
+    width: 45%;
+    border-radius: 20px;
+    margin: auto;
+    padding: 20px;
+    
+    
+    background-color: rgb(254, 230, 188);
+    box-shadow: -2px 40px 50px 2px rgb(221, 252, 201);
+}
+
+.img2{
+    border: transparent;
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/03/product.jpg);
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.text2{
+    width: 80%;
+    margin: auto;
+}
+
+.child3{
+    border:  1px solid black;
+    width: 100%;
+    border-radius: 20px;
+    margin-top: -2%;
+    padding: 35px 20px;
+    background-color: rgb(241, 242, 159);
+    box-shadow: -2px 40px 50px 2px rgb(255, 207, 192);
+}
+
+.child3parent{
+    width: 45%;
+    margin: auto;
+    margin-top: -100px;
+}
+
+.img3{
+    border: transparent;
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/DATA-SQI.jpg);
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.child4parent{
+    width: 45%;
+    margin: auto;
+    margin-top: -10%;
+}
+
+.text3{
+    width: 80%;
+    margin: auto;
+}
+
+.child4{
+    border:  1px solid black;
+    width: 100%;
+    border-radius: 20px;
+    /* margin-top: -90px; */
+    padding: 20px 0px;
+    background-color: rgb(253, 239, 253);
+    box-shadow: -2px 40px 50px 2px rgb(255, 207, 192);
+}
+
+.img4{
+    border: transparent;
+    border-radius: 20px;
+    width: 80%;
+    height: 200px;
+    background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/03/digital-literacy.jpg);
+    background-position: center;
+    background-size:  cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.text4{
+    width: 80%;
+    margin: auto;
+}
+
+.parent-b{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    gap: 0%;
+}
+
+
+@media (max-width:900px ) {
+
+    .parent-b{
+        display: block;
         width: 95%;
-        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        gap: 50px;
-        justify-content: center;
+        margin: auto;
+        gap: 0%;
     }
 
-    .child{
-        border: transparent;
-        width: 400px;
-        
-    }
-    .child1{
-        border: transparent;
-        width: 32rem;
-        border-radius: 20px;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: rgb(214, 250, 251);
-        box-shadow: -2px 40px 50px 2px rgb(221, 252, 201);
-        
-    }
-
-    .child2{
-        border: transparent;
-        width: 32rem;
-        border-radius: 20px;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: rgb(254, 230, 188);
-        box-shadow: -2px 40px 50px 2px rgb(221, 252, 201);
-    }
-
-    .child3{
-        border:  transparent;
-        width: 32rem;
-        border-radius: 20px;
-        margin-top: 20px;
-        padding: 20px;
-        background-color: rgb(241, 242, 159);
-        box-shadow: -2px 40px 50px 2px rgb(255, 207, 192);
+    .child4parent{
+        width: inherit;
+        margin: auto;
+        margin-bottom: 10px;
     }
 
     .child4{
-        border: transparent;
-        width: 32rem;
-        border-radius: 20px;
-        margin-top: 20px;
+        border: none;
         padding: 20px;
-        background-color: rgb(253, 239, 253);
-        box-shadow: -2px 40px 50px 2px rgb(255, 207, 192);
+    }
+
+    .child2{
+        width: inherit;
+        margin-bottom: 10px;
+    }
+
+    .parent-a{
+        display: block;
+        width: 95%;
+        margin: auto;
+        gap: 0%;
+    }
+
+    .child1{
+        width: inherit;
+        margin-bottom: 20px;
+    }
+
+    .child3parent{
+        width: inherit;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .child3{
+        border: none;
+    }
+
+    .card-img-top{
+        width: 90%;
+        margin: auto;
     }
 
     .img1{
-        border: transparent;
-        border-radius: 20px;
-        width: 80%;
-        height: 200px;
-        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/software-engineering-630x330-1.webp);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin: auto;
-        margin-top: 30px;
+        width: 95%;
+    }
+
+    .text1{
+        width: 95%;
     }
 
     .img2{
-        border: transparent;
-        border-radius: 20px;
-        width: 80%;
-        height: 200px;
-        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/03/product.jpg);
-        background-position: center;
-        background-size:  cover;
-        background-repeat: no-repeat;
-        margin: auto;
-        margin-top: 30px;
-    }
-
-    .img3{
-        border: transparent;
-        border-radius: 20px;
-        width: 80%;
-        height: 200px;
-        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/DATA-SQI.jpg);
-        background-position: center;
-        background-size:  cover;
-        background-repeat: no-repeat;
-        margin: auto;
-        margin-top: 30px;
-    }
-
-    .img4{
-        border: transparent;
-        border-radius: 20px;
-        width: 80%;
-        height: 200px;
-        background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/03/digital-literacy.jpg);
-        background-position: center;
-        background-size:  cover;
-        background-repeat: no-repeat;
-        margin: auto;
-        margin-top: 30px;
-    }
-    
-    .text1{
-        line-height: 25px;
-        border: transparent;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 30px;
+        width: 95%;
     }
 
     .text2{
-        line-height: 25px;
-        border: transparent;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 30px;
+        width: 95%;
+    }
+
+    .img3{
+        width: 95%;
     }
 
     .text3{
-        line-height: 25px;
-        border: transparent;
-        width: 80%;
-        margin: auto;
-        margin-bottom: 30px;
+        width: 95%;
+    }
+
+    .img4{
+        width: 95%;
     }
 
     .text4{
-        line-height: 25px;
-        border: transparent;
+        width: 95%;
+    }
+
+}
+
+.alumni{
+    width: 60%;
+    font-size: 27px;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.alumniParent{
+    width: 70%;
+    margin: auto;
+}
+
+.gridSection{
+    margin-top: 170px;
+}
+
+.grids{
+    padding;
+}
+
+
+.tour{
+    display: flex;
+    gap: 5%;
+    width: 100%;
+    background-image: linear-gradient(120deg, rgba(0, 4, 66, 0) 0%, #000442 70%), url(https://edu.sqi.ng/wp-content/uploads/2020/08/DSC_9054-scaled.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 0;
+}
+
+
+.textframe{
+    width: 35%;
+    /* margin: auto; */
+    
+    
+}
+
+.iframe{
+    border-radius: 10px;
+}
+
+.textframe .button {
+    background-color: #0a17c7;
+    padding: 15px;
+    border-radius: 30px;
+    border: none;
+}
+
+.frame{
+    /* margin: auto; */
+    border-radius: 15px;
+    /* width: 40%; */
+}
+
+@media (max-width: 980px) {
+    .tour{
+        display: block;
+    }
+
+    .frame{
+        width: 90%;
+        margin: auto;
+        height: 300px;
+    }
+
+    .iframe{
+        width: inherit;
+        height: inherit;
+    }
+
+    .textframe{
+        width: 90%;
+        margin: auto;
+        
+        
+    }
+
+
+}
+
+@media (max-width: 768px) {
+        .gridSection{
+            display: none;
+        }
+}
+
+.why{
+    justify-content: center;
+    gap: 10%;
+    display: flex;
+}
+
+.leftWhy{
+    width: 50%;
+
+}
+
+.rightWhy{
+    width: 20%;
+    background-image: url(https://edu.sqi.ng/wp-content/uploads/2023/01/conference_image_15.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.rightWhy img{
+    display: none;
+}
+
+
+
+.column{
+    width: 50%;
+}
+
+.leftOne, .leftTwo, .leftThree, .leftFour{
+    padding: 30px 0px;
+    gap: 20px;
+    display: flex;
+}
+
+@media (max-width: 980px)  {
+    .why{
+        display: block;
+        
+    }
+
+    .rightWhy{
+        width: 85%;
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        margin: auto;
+
+    }
+
+    .leftOne, .leftTwo, .leftThree, .leftFour{
+        /* padding: 10px 0px; */
+        /* gap: 20px; */
+        display: block;
+        width: 100%;
+        
+    }
+
+    .column{
+        width: inherit;
+        padding: 20px;
+    }
+
+    .leftWhy{
         width: 80%;
         margin: auto;
-        margin-bottom: 30px;
+    
     }
 
 
 
-    .heading{
-        font-size: 45px;
-    } */
 
-    @media (max-width: 1024px) {
-        .card{
-            /* width: 100%; */
-        }
-    }
+}
 
-    .duration{
-        /* width: 30rem; */
-    }
 
-    @media (max-width: 1024px) {
-       .duration{
-        padding: 0px 0px;
-       }
-    }
